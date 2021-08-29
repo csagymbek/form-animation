@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: whitesmoke;
+  -webkit-transition: background .5s ease;
+  transition: background .5s ease;
+  position: relative;
+  color: #333;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #333;
+  background: whitesmoke;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  height: 50px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+div i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

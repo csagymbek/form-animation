@@ -1,0 +1,58 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: sans-serif
+
+body
+    height: 100vh
+    display: flex
+    background: whitesmoke
+    transition: background .5s ease
+    position: relative
+    color: #333
+
+div
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border: 1px solid #333
+    background: whitesmoke
+    border-radius: .5rem
+    padding: .5rem 1rem
+    height: 50px
+    width: 400px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    transition: all .5s ease
+    i
+        padding: 10px
+        cursor: pointer
+
+input
+    background: none
+    outline: none
+    border: none
+    width: 250px
+    height: 100%
+    font-size: 1rem
+
+.inactive
+    opacity: 0
+    pointer-events: none
+    transform: translate(-50%, 50%)
+
+.active
+    opacity: 1
+    pointer-events: all
+    transform: translate(-50%, -50%)
+
+@keyframes shake
+    0%
+        transform: translate(-50%, -50%) rotate(0deg)
+    50%
+        transform: translate(-50%, -50%) rotate(10deg)
+    100%
+        transform: translate(-50%, -50%) rotate(0deg)
